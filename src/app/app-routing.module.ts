@@ -9,7 +9,7 @@ import {FooterComponent} from '../app/footer/footer.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'homepage', component:HomeComponent },
+  { path: 'home', component:HomeComponent },
   { path: 'navbar', component:NavbarComponent },
   { path: 'about', component:AboutComponent },
   { path: 'contact', component:ContactComponent },
