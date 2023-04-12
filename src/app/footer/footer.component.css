@@ -143,3 +143,7 @@
     position:absolute;
     left: 65%;
 }
+.img-fluid{
+  height:100px;
+  width: 250px;
+}
