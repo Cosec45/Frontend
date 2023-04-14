@@ -8,10 +8,48 @@ html,body {
      color: #ffffff;
   }
   .btn {
-  
     background-color: orangered;
   }
   .login:hover {
     background-color: rgb(212, 212, 203);
     color: #d4d4d4;
   }
+
+  
+  @media (max-width: 767.98px) {
+    .nav-item ,.dropdown-menu{
+      display: block;
+    }
+    .dropdown-item {position: relative;}
+  }
+  /* mobile */
+@media (max-width: 575.98px) {
+  .box {
+
+      padding: 64px 32px;
+  }
+}
+
+/* tablet or ipad */
+@media (min-width: 768px) {
+  .box {
+
+      padding: 64px 64px;
+  }
+}
+
+/* mac */
+@media (min-width: 1199.98px) {
+  .box {
+
+      padding: 64px 150px;
+  }
+}
+
+/* pc */
+@media (min-width: 1399.98px) {
+  .box {
+
+      padding: 64px 300px;
+  }
+}
