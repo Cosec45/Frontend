@@ -11,6 +11,8 @@ import { TourComponent } from './page/tour/tour.component';
 import { FooterComponent } from './footer/footer.component';
 import { DomesticComponent } from './tourcard/domestic/domestic.component';
 import { ForeignComponent } from './tourcard/foreign/foreign.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ForeignComponent } from './tourcard/foreign/foreign.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
