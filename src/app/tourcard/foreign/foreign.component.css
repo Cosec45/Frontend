@@ -36,3 +36,15 @@ h1 {
         padding: 64px 300px;
     }
 }
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+  }
+  #nodata{
+    width: fit-content;
+    height: fit-content;
+   font-size: larger;
+  }
+  

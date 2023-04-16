@@ -34,8 +34,7 @@ nav .navbar-brand {
 
 /* tablet or ipad */
 @media (max-width: 850px) {
-   .nav-item
-  .dropdown-menu {
+   .nav-item ,.dropdown-menu {
     /* display: block;
     */
   }
