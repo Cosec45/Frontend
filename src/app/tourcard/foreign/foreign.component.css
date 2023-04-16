@@ -45,6 +45,15 @@ h1 {
   #nodata{
     width: fit-content;
     height: fit-content;
-   font-size: larger;
   }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  /* .card{
+    background-color: #ffffff;
+    border: 1px solid black;
+  } */
+  
   
