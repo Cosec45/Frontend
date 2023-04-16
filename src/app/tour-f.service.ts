@@ -12,4 +12,7 @@ private url: string ='http://localhost:3000/api/'
   getTourFsData(): Observable<TourFStructure[]> {
     return this._http.get<TourFStructure[]>(this.url+'tourForeign'); 
   }
+  getTourDataById(id:string): Observable<TourFStructure> {
+    return this._http.get<TourFStructure>(this.url+'tourForeign/'+id);
+  }
 }

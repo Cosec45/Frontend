@@ -12,7 +12,8 @@ export class DomesticComponent {
   Ddata:TourDStructure[] = [];
   constructor(private Ddatanew: TourDService,private routing:Router) {}
   ngOnInit(): void {
-    this.Ddatanew.getTourDData().subscribe((data)=>{
+    this.Ddatanew.getAllTourData().subscribe((data)=>{
+      this.Ddata = data.filter(acat=>acat.booker=="-1")
       console.log(this.Ddata = data)
       
     })

@@ -3,16 +3,18 @@
   <div class="container-fluid" id="nodata">
     <div class="row row-cols-1 row-cols-md-3 g-4 m-1">
       <div class="col-3" *ngFor="let tour of Ddata">
-        <div class="card " style="width: 17rem ;height: 20rem">
-          <img [src]="tour.img" class="card-img-top" alt="tour" />
-          <div class="card-body">
-            <h5 class="card-title">{{tour.idTour}}</h5>
-            <p class="card-text">
-               {{tour.location}}
-               {{tour.place}}
-            </p>
+        <a [href]="'domestic/'+ tour.id">
+          <div class="card" style="width: 17rem; height: 20rem">
+            <img [src]="tour.img" class="card-img-top" alt="tour" />
+            <div class="card-body">
+              <h5 class="card-title">{{ tour.id }}</h5>
+              <p class="card-text">
+                {{ tour.location }}
+                {{ tour.place }}
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>

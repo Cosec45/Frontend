@@ -9,8 +9,11 @@ import { Observable } from 'rxjs';
 export class TourDService {
   private url: string ='http://localhost:3000/api/'
   constructor(private _http: HttpClient) {}
-  getTourDData(): Observable<TourDStructure[]> {
+  getAllTourData(): Observable<TourDStructure[]> {
     return this._http.get<TourDStructure[]>(this.url+'tourDomestic'); 
+  }
+  getTourDataById(id:string): Observable<TourDStructure> {
+    return this._http.get<TourDStructure>(this.url+'tourDomestic/'+id);
   }
 
 }

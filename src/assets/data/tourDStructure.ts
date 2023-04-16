@@ -1,5 +1,5 @@
 export interface TourDStructure {
-    idTour?:  Number 
+    id?:  Number 
     domesticOrForeign?:  String 
     location?:  String 
     place?:  String 
