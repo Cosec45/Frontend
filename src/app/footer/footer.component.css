@@ -147,3 +147,34 @@
   height:100px;
   width: 250px;
 }
+/* mobile */
+@media (max-width: 575.98px) {
+  .box {
+
+      padding: 64px 32px;
+  }
+}
+
+/* tablet or ipad */
+@media (min-width: 768px) {
+  .box {
+
+      padding: 64px 64px;
+  }
+}
+
+/* mac */
+@media (min-width: 1199.98px) {
+  .box {
+
+      padding: 64px 150px;
+  }
+}
+
+/* pc */
+@media (min-width: 1399.98px) {
+  .box {
+
+      padding: 64px 300px;
+  }
+}

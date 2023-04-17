@@ -11,6 +11,10 @@ import { TourComponent } from './page/tour/tour.component';
 import { FooterComponent } from './footer/footer.component';
 import { DomesticComponent } from './tourcard/domestic/domestic.component';
 import { ForeignComponent } from './tourcard/foreign/foreign.component';
+import { FormsModule } from '@angular/forms';
+import { DomesticIDComponent } from './pagebyID/domestic-id/domestic-id.component';
+import { ForeignIDComponent } from './pagebyID/foreign-id/foreign-id.component';
+
 
 @NgModule({
   declarations: [
@@ -22,12 +26,16 @@ import { ForeignComponent } from './tourcard/foreign/foreign.component';
     TourComponent,
     FooterComponent,
     DomesticComponent,
-    ForeignComponent
+    ForeignComponent,
+    DomesticIDComponent,
+    ForeignIDComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

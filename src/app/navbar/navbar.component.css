@@ -1,17 +1,60 @@
-html,body {
-    height:100%;
-    position: relative;
-    
-  }
-  nav .navbar-nav .nav-link,
-  nav .navbar-brand {
-     color: #ffffff;
-  }
-  .btn {
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+nav .navbar-nav .nav-link,
+nav .navbar-brand {
+  color: #ffffff;
+}
+.btn {
+  background-color: orangered;
+}
+.login:hover {
+  background-color: rgb(153, 153, 153);
+  color: #d4d4d4;
+}
+
+/* mobile */
+@media (max-width: 575.98px) {
+  .nav-item,.navbar,
+  .dropdown-menu {
+    /* display: block; */
+    background-color: #777777;
   
-    background-color: orangered;
   }
-  .login:hover {
-    background-color: rgb(212, 212, 203);
-    color: #d4d4d4;
+  .dropdown-item {
+    position: relative;
   }
+  .top-nav{
+    margin-top: 45px !important;
+  }
+}
+
+
+/* tablet or ipad */
+@media (max-width: 850px) {
+   .nav-item ,.dropdown-menu {
+    /* display: block;
+    */
+  }
+  .dropdown-item {
+    position: relative;
+  } 
+  
+}
+
+/* mac */
+@media (min-width: 1199.98px) {
+  /* .nav-item {
+    /* padding: auto; 
+  } */
+  
+}
+
+/* pc */
+@media (min-width: 1399.98px) {
+  /* .nav-item{
+    /* padding: auto; 
+  } */
+}

@@ -1,28 +1,37 @@
-<nav id="nav" class="navbar fixed-top navbar-expand-sm " data-spy="affix">
-   <div class="container  position-relative">
-       <a href="#" class="navbar-brand text-white">What the Travel</a>
-       <a class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">☰</a>
-       <div class="navbar-collapse collapse ">
-           <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
-            <li class="nav-item ">
-                <a class="nav-link dropdown-toggle" href="/tour" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Tour
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Foreign</a></li>
-                    <li><a class="dropdown-item" href="#">Domestic</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Add New Tour</a></li>
-                  </ul>
-               </li>
-               <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
-               <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
-           </ul>
-           <ul class="ml-auto navbar-nav position-absolute top-50 start-100 translate-middle">
-            <li class="nav-item ">
-                <a href="/about" class="login nav-link border px-3 py-1">Login</a>
-            </li>
-           </ul>
-       </div>
-   </div>
+<nav id="nav" class="navbar fixed-top navbar-expand-sm" data-spy="affix">
+  <div class="container position-relative">
+    <a href="#" class="navbar-brand text-white">What the Travel</a>
+
+    <ul
+      class="top-nav navbar-nav position-absolute top-50 start-50 translate-middle"
+    >
+      <li class="nav-item">
+        <a
+          class="nav-link dropdown-toggle"
+          href="/tour"
+          id="navbarDropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Tour
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="/domestic">Domestic</a></li>
+          <li><a class="dropdown-item" href="/foreign">Foreign</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Add New Tour</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+      <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+    </ul>
+    <ul
+      class="ml-auto navbar-nav position-absolute top-50 start-100 translate-middle"
+    >
+      <li class="nav-item">
+        <a href="/about" class="login nav-link border px-3 py-1">Login</a>
+      </li>
+    </ul>
+  </div>
 </nav>

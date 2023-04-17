@@ -1,1 +1,25 @@
-<p>domestic works!</p>
+<div class="container-fluid mx-3 my-5">
+  <h1>Explore place around Thailand</h1>
+  <div class="container-fluid" id="nodata">
+    <div class="row row-cols-1 row-cols-md-3 g-4 m-1">
+      <div class="col-3" *ngFor="let tour of Ddata">
+        <a [href]="'domestic/'+ tour.id">
+          <div class="card" style="width: 17rem; height: 23rem">
+            <img [src]="tour.img" class="card-img-top" alt="tour" />
+            <div class="card-body">
+              <h5 class="card-title">{{ tour.tourId }}</h5>
+              <p class="card-text">
+                <i class="bi bi-geo-alt-fill"></i>
+                {{ tour.location }},{{ tour.place }}<br>
+                <i class="bi bi-calendar4"></i>
+                {{ tour.startDate }} - {{ tour.endDate }}<br>
+                <i class="bi bi-cash"></i>
+                {{ tour.pricePerPerson }} THB
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

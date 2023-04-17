@@ -1,0 +1,35 @@
+h1 {
+  color: #ffffff;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: 'Itim', cursive;
+  font-family: 'Niramit', sans-serif;
+  font-family: 'Noto Serif Thai', serif;
+}
+#img {
+  width: 100%;
+  /* height: 52.5vw; */
+  object-fit: scale-down;
+}
+#imgsmall {
+  width: 100%;
+  height: 6.5vw;
+  object-fit: cover;
+}
+.btn {
+  background-color: chocolate;
+}
+/* html{
+    position: relative;
+} */
+/* .inf{
+    position:absolute;
+    top: 195px;
+    left: 900px;
+} */
+.card{
+    width: 19rem; 
+    height: 30rem;
+    display: flex; 
+    align-items: center;
+}
+
