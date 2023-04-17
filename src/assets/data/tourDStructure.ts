@@ -14,4 +14,5 @@ export interface TourDStructure {
     img?:  String 
     tourId?:  String 
     arrayimg?: Array<string>
+    day?:String
 }
