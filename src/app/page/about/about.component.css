@@ -154,12 +154,13 @@ a {
   padding-bottom: 30px;
 }
 .padding04{
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
-.img{
-  height: 500px;
-  width: 500px;
+img{
+  width: 100%;
+  height: 17rew;
+  object-fit:cover;
 }
 .row {
   display: flex;
@@ -183,7 +184,7 @@ a {
 .font01{
   font-style: italic;
 }
-=======
+
 /* mobile */
 @media (max-width: 575.98px) {
     .box {

@@ -17,23 +17,28 @@
       </div>
     </div>
     <div class="col-3 text-white">
-      <div class="card text-dark p-3">
+      <div class="card text-dark px-3 py-4">
         <h3>{{ Ddata.tourId }}</h3>
         <h5>Thailand {{ Ddata.location }},{{ Ddata.place }}</h5>
-        <div>
+        <div class="p-2">
           Max group size : {{ Ddata.amountReceived }}<br />
-          ageRange : {{ Ddata.ageRange }}<br />
-          tourOperator : {{ Ddata.ageRange }}<br />
-          operatedIn : {{ Ddata.operatedIn }}<br />
+          Age range : {{ Ddata.ageRange }}<br />
+          Tour Operator : {{ Ddata.ageRange }}<br />
+          Operated in : {{ Ddata.operatedIn }}<br />
+          Start: {{ Ddata.startDate }}<br />
+          End: {{ Ddata.endDate }}<br />
+          <i class="bi bi-clock"></i>
+           {{Ddata.day}} days<br />
           <i class="bi bi-cash"></i> {{ Ddata.pricePerPerson }} THB
         </div>
-        <a class="btn text-white w-100 m-3">
+        <a routerLinkActive=" active " routerLink="/tripinto" class="btn text-white w-100 m-3">
           <b>Book</b>
         </a>
+        <a href="/contact"><i class="bi bi-chat-left-text">  Need help?</i> </a>
       </div>
     </div>
   </div>
   <div class="row">
-    Introduction
+    <h2 class="text-white">Introduction</h2>
   </div>
 </div>

@@ -10,6 +10,8 @@ import {DomesticComponent} from '../app/tourcard/domestic/domestic.component';
 import {ForeignComponent} from '../app/tourcard/foreign/foreign.component';
 import {DomesticIDComponent} from '../app/pagebyID/domestic-id/domestic-id.component';
 import {ForeignIDComponent} from '../app/pagebyID/foreign-id/foreign-id.component';
+import { TripinfoComponent } from '../app/page/tripinfo/tripinfo.component';
+import{PaymentComponent}from '../app/page/payment/payment.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,8 +24,9 @@ const routes: Routes = [
   { path: 'foreign', component:ForeignComponent },
   { path: 'domestic', component:DomesticComponent },
   { path: 'domestic/:id', component:DomesticIDComponent },
-  { path: 'foreign/:id', component:ForeignIDComponent }
-  
+  { path: 'foreign/:id', component:ForeignIDComponent },
+  { path: 'tripinto', component:TripinfoComponent },
+  { path: 'Payment', component:PaymentComponent }
 
 ];
 
