@@ -13,4 +13,5 @@ export interface TourFStructure {
     booker?:  String 
     img?:  String 
     tourId?:  String 
+    arrayimg?: Array<string>
 }
