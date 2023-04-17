@@ -11,6 +11,7 @@ import { ActivatedRoute,Router } from '@angular/router';
 export class ForeignIDComponent {
   id = '';
   Ddata: TourFStructure = {};
+  imgSelect = '';
   constructor(private datanew: TourFService,private routedata:ActivatedRoute,private route:Router) {}
 
   ngOnInit(): void {
@@ -22,5 +23,9 @@ export class ForeignIDComponent {
       console.log(this.Ddata)
       
     })
+  }
+  getImg(pic:string){
+    this.imgSelect = pic
+    console.log(pic)
   }
 }

@@ -1,20 +1,26 @@
 h1 {
-    color: #ffffff;
-    font-family: 'IBM Plex Sans Thai', sans-serif;
-    font-family: 'Itim', cursive;
-    font-family: 'Niramit', sans-serif;
-    font-family: 'Noto Serif Thai', serif;
-  }
-  #img{
+  color: #ffffff;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: 'Itim', cursive;
+  font-family: 'Niramit', sans-serif;
+  font-family: 'Noto Serif Thai', serif;
+}
+#img {
+  width: 100%;
+   /* height:43.5vw;  */
+  object-fit: scale-down;
+}
+#imgsmall {
     width: 100%;
-  height: 41.7vw;
-  object-fit: cover;
-  }
-  #imgsmall{
-    width: 100%;
-    height: 10vw;
+    height: 6vw;
     object-fit: cover;
-  }
-  .btn{
-    background-color: chocolate;
-  }
+}
+.btn {
+  background-color: #f88020;
+}
+.card{
+    width: 19rem; 
+    height: 28rem;
+    display: flex;
+    align-items: center;
+}

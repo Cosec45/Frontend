@@ -11,6 +11,7 @@ import { ActivatedRoute,Router } from '@angular/router';
 export class DomesticIDComponent {
   id = '';
   Ddata: TourDStructure = {};
+  imgSelect = '';
   constructor(private datanew: TourDService,private routedata:ActivatedRoute,private route:Router) {}
 
   ngOnInit(): void {
@@ -22,6 +23,10 @@ export class DomesticIDComponent {
       console.log(this.Ddata)
       
     })
+  }
+  getImg(pic:string){
+    this.imgSelect = pic
+    console.log(pic)
   }
 
 }
