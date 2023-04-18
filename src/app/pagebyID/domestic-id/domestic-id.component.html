@@ -28,17 +28,27 @@
           Start: {{ Ddata.startDate }}<br />
           End: {{ Ddata.endDate }}<br />
           <i class="bi bi-clock"></i>
-           {{Ddata.day}} days<br />
+          {{ Ddata.day }} days<br />
           <i class="bi bi-cash"></i> {{ Ddata.pricePerPerson }} THB
         </div>
-        <a routerLinkActive=" active " routerLink="/tripinto" class="btn text-white w-100 m-3">
+        <a
+          routerLinkActive=" active "
+          routerLink="/tripinto"
+          class="btn text-white w-100 m-3"
+        >
           <b>Book</b>
         </a>
-        <a href="/contact"><i class="bi bi-chat-left-text">  Need help?</i> </a>
+        <a href="/contact"><i class="bi bi-chat-left-text"> Need help?</i> </a>
       </div>
     </div>
   </div>
-  <div class="row">
-    <h2 class="text-white">Introduction</h2>
+  <div class="row ">
+    <div class="card w-100 ">
+      <h2 class="">Introduction</h2>
+      <h4>Day1</h4>
+      {{ tripdata.day1 }}
+      <h4>Day2</h4>
+      {{ tripdata.day2 }}
+    </div>
   </div>
 </div>

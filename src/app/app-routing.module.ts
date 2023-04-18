@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'domestic/:id', component:DomesticIDComponent },
   { path: 'foreign/:id', component:ForeignIDComponent },
   { path: 'tripinto', component:TripinfoComponent },
-  { path: 'Payment', component:PaymentComponent }
+  { path: 'payment', component:PaymentComponent }
 
 ];
 

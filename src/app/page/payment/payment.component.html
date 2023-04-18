@@ -1,3 +1,81 @@
-<div class="container-fluid my-5">
-        <h1>Payment</h1>
+<div class="container-fluid my-5 px-5">
+  <div class="row mx-5 px-5">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="card my-5 mx-3 p-3" style="width: 100%; height: 35rem">
+        <h1 class="head"><i class="bi bi-paypal"></i>ayMent</h1>
+        <div class="row"></div>
+
+        <table style="width: 100%;">
+          <tbody>
+            <tr>
+              <td><div class="ms-3">Card Number</div></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <input
+                  type="text"
+                  id="cardnum"
+                  name="cardnum"
+                  placeholder="card number"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3"><div class="ms-3">Name on card</div></td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <input
+                  type="text"
+                  id="numcard"
+                  name="numcard"
+                  placeholder="number on card"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><span class="ms-3">Expiration date</span></td>
+              <td><span class="ms-2">CVV</span></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input
+                  type="date"
+                  id="date"
+                  name="tripdate"
+                  placeholder="Trip Date"
+                />
+              </td>
+              <td>
+                <input type="text" id="cvv" name="cvv" placeholder="..." />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="ms-3 fs-6">
+          <input type="checkbox" name="checkbox" id="checkbox" /> Remember this
+          card <br />
+          <input type="checkbox" name="checkbox" id="checkbox" /> I gree to
+          TakeMeTour's <label style="color: #f88020">T&Cs</label> &
+          <label style="color: #f88020">Cancellation Policy</label>
+        </div>
+
+        <a
+          routerLinkActive=" active "
+          routerLink="/Payment"
+          class="btn text-white w-80 m-3"
+        >
+          <b><i class="bi bi-credit-card-fill"></i> Confirm payment</b>
+        </a>
+      </div>
+    </div>
+    <div class="col-2"></div>
+    <!-- <div class="col-4">
+        <div class="card my-5 mx-3 p-3">
+        </div>
+      </div> -->
+  </div>
 </div>

@@ -1,5 +1,57 @@
-<div class="container-fluid my-5">
-    <a routerLinkActive=" active " routerLink="/Payment" class="btn text-white w-100 m-3">
-        <b>Book</b>
-      </a>
+<div class="container-fluid my-5 px-5">
+  <div class="row mx-5 px-5">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div class="card my-5 mx-3 p-3" style="width: 100%; height: 35rem">
+        <h1 class="head">General Information</h1>
+        <div class="d-line-block">
+          <input type="text" id="fname" name="fname" placeholder="Name" [(ngModel)]="name"/>
+          <input type="text" id="lname" name="lname" placeholder="Last Name" [(ngModel)]="lname"/>
+        </div>
+        <div class="d-line-block">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+          />
+          <input
+            type="tel"
+            id="phone"
+            name="hone"
+            class="ms-2"
+            placeholder="Your Phone"
+          />
+        </div>
+        <div class="d-line-block " >
+            <input type="number" id="number" name="Guest" class="ms-2" placeholder="Guest" [(ngModel)]="guest"/>
+            <input type="number" id="number" name="day" class="ms-2" placeholder="Number of Days" [(ngModel)]="numday"/>
+        </div>
+        <div class="d-line-block ps-3" >
+            <i class="bi bi-calendar-week"></i> Trip Date Start 
+        </div>
+        <div class=" " >
+            <input type="date" id="date" name="tripdate" class="ms-2" placeholder="Trip Date" [(ngModel)]="tripdateS"/>
+        </div>
+        <div class="d-line-block ps-3" >
+            <i class="bi bi-calendar-week"></i> Trip Date End 
+        </div>
+        <div class="d-line-block " >
+            <input type="date" id="date" name="tripdate" class="ms-2" placeholder="Trip Date"[(ngModel)]="tripdateE"/>
+        </div>
+        <a
+        
+          class="btn text-white w-80 m-3"
+          (click)="send()" value=" send"
+        >
+          <b>Book</b>
+        </a>
+      </div>
+    </div>
+    <div class="col-2"></div>
+    <!-- <div class="col-4">
+      <div class="card my-5 mx-3 p-3">
+      </div>
+    </div> -->
+  </div>
 </div>
