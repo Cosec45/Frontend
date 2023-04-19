@@ -14,8 +14,12 @@ import { ForeignComponent } from './tourcard/foreign/foreign.component';
 import { FormsModule } from '@angular/forms';
 import { DomesticIDComponent } from './pagebyID/domestic-id/domestic-id.component';
 import { ForeignIDComponent } from './pagebyID/foreign-id/foreign-id.component';
+
+import { LoginComponent } from './page/login/login.component';
+
 import { TripinfoComponent } from './page/tripinfo/tripinfo.component';
 import { PaymentComponent } from './page/payment/payment.component';
+
 
 
 @NgModule({
@@ -31,8 +35,12 @@ import { PaymentComponent } from './page/payment/payment.component';
     ForeignComponent,
     DomesticIDComponent,
     ForeignIDComponent,
+
+    LoginComponent
+
     TripinfoComponent,
     PaymentComponent
+
   ],
   imports: [
     BrowserModule,
