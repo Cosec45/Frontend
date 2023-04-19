@@ -27,6 +27,7 @@ export class ContactComponent {
     phone:this.phone,
     massage:this.massage}).subscribe(data => {
         console.log(data)
+        this.alert()
      });
   }
   

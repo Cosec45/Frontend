@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import{ContactStructure}from '../assets/data/contact'
 import {tripbookStructure} from '../assets/data/tripbook';
+import {PaymentStructure} from '../assets/data/payment'
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +28,13 @@ private url: string ='http://localhost:3000/api/'
     const headers = { 'tripbook-type': 'application/json'}
 
     return this._http.post<tripbookStructure>(this.url+'tripbook',{body:tripbook}, { headers: headers});
+    
+  }
+  createNewPayment(payment:object):Observable<PaymentStructure> {
+    console.log(payment);
+    const headers = { 'payment-type': 'application/json'}
+
+    return this._http.post<PaymentStructure>(this.url+'payment',{body:payment}, { headers: headers});
     
   }
 }
