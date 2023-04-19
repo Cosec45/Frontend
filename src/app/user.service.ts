@@ -37,4 +37,6 @@ private url: string ='http://localhost:3000/api/'
     return this._http.post<PaymentStructure>(this.url+'payment',{body:payment}, { headers: headers});
     
   }
+// login
+
 }
