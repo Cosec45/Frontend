@@ -1,15 +1,57 @@
-input[type='submit'] {
-  background: #f88020;
-  height: 40px;
-   border-radius: 30px; 
-  color: #fff;
-  /* font-weight: bold; */
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: 10px;
+
+button {
+  font-family: inherit;
+  font-size: 17px;
+  background:#f88020;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.5s;
 }
+
+button span {
+  display: block;
+  margin-left: 0.em;
+  transition: all 0.3s ease-in-out;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(5em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
 
 
 *, *:before, *:after {

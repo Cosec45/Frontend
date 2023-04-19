@@ -6,10 +6,6 @@
           <div class="row-1 py-1" *ngFor="let img of Ddata.arrayimg">
             <img id="imgsmall" (click)="getImg(img)" [src]="img" alt="tour" />
           </div>
-          <!-- <div class="row-1 py-1"><img id="imgsmall" src="https://wallpapercave.com/wp/wp4190142.jpg" alt="tour" /></div>
-            <div class="row-1 py-1"><img id="imgsmall" src="https://wallpapercave.com/wp/wp4190142.jpg" alt="tour" /></div>
-            <div class="row-1 py-1"><img id="imgsmall" src="https://wallpapercave.com/wp/wp4190142.jpg" alt="tour" /></div>
-            <div class="row-1 py-1"><img id="imgsmall" src="https://wallpapercave.com/wp/wp4190142.jpg" alt="tour" /></div> -->
         </div>
         <div class="col-9 py-1">
           <img id="img" [src]="imgSelect || Ddata.img" alt="tour" />
@@ -42,13 +38,55 @@
       </div>
     </div>
   </div>
-  <div class="row ">
-    <div class="card w-100 ">
-      <h2 class="">Introduction</h2>
-      <h4>Day1</h4>
-      {{ tripdata.day1 }}
-      <h4>Day2</h4>
-      {{ tripdata.day2 }}
+  <div class="row">
+    <!--  -->
+    <div class="card-detail">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content text-dark">
+        <h4 style="text-align: center;">Trip Detail</h4>
+        <table>
+          <table>
+            <div>
+              <div class="card-header">
+                <div class="img-avatar"></div>
+                <div class="text-chat">Introduction</div>
+              </div>
+              <div class="card-body">
+                <div class="messages-container" *ngFor="let  dayData of tripdata.day; let dayNumber = index">
+                    <div class="message-box left" >
+                        <p>Day{{ dayNumber+1 }}</p>
+                    </div>
+                    <div class="message-box right">
+                        <p>{{ dayData }}</p>
+                    </div>
+                </div>
+                <div class="message-input">
+                  <form>
+                    <textarea placeholder="Type your message here" class="message-send"></textarea>
+                    <button type="submit" class="button-send">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </table>
+        </table>
+      </div>
     </div>
+    <!---->
+    <!-- <div class="card-detail">
+      
+    </div> -->
+
+    <!--  -->
   </div>
 </div>
