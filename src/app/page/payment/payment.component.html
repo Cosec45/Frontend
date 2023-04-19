@@ -20,6 +20,7 @@
                   id="cardnum"
                   name="cardnum"
                   placeholder="card number"
+                  [(ngModel)]="cardnum"
                 />
               </td>
             </tr>
@@ -33,6 +34,7 @@
                   id="numcard"
                   name="numcard"
                   placeholder="number on card"
+                  [(ngModel)]="numoncard"
                 />
               </td>
             </tr>
@@ -47,10 +49,11 @@
                   id="date"
                   name="tripdate"
                   placeholder="Trip Date"
+                  [(ngModel)]="exdate"
                 />
               </td>
               <td>
-                <input type="text" id="cvv" name="cvv" placeholder="..." />
+                <input type="text" id="cvv" name="cvv" placeholder="..." [(ngModel)]="cvv"/>
               </td>
             </tr>
           </tbody>
@@ -66,10 +69,10 @@
 
         <a
           routerLinkActive=" active "
-          routerLink="/Payment"
+          routerLink="/payment"
           class="btn text-white w-80 m-3"
         >
-          <b><i class="bi bi-credit-card-fill"></i> Confirm payment</b>
+          <b><i class="bi bi-credit-card-fill" (click)="send()"></i> Confirm payment</b>
         </a>
       </div>
     </div>
