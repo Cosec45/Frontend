@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
-import {ContactStructure} from '../../../assets/data/contact';
 import {UserService} from '../../user.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  selector: 'app-payment',
+  templateUrl: './payment.component.html',
+  styleUrls: ['./payment.component.css']
 })
-export class ContactComponent {
-  name:string = ""
-  email:string = ""
-  phone:string = "" 
-  massage:string = ""
+export class PaymentComponent {
+  cardnum: String = ""
+  numoncard: String = ""
+  exdate: String = ""
+  cvv: String = ""
   constructor(private data1:UserService,private routedata:ActivatedRoute){
 
   }
@@ -21,15 +20,13 @@ export class ContactComponent {
   }
   send(){
     // console.log(this.name+this.lname+this.email+this.phone+this.address+this.massage)
-    this.data1.createNewUser({
-      name:this.name,
-    email:this.email,
-    phone:this.phone,
-    massage:this.massage}).subscribe(data => {
+    this.data1.createNewPayment({
+      cardnum: this.cardnum,
+      numoncard: this.numoncard,
+      exdate: this.exdate,
+      cvv: this.cvv}).subscribe(data => {
         console.log(data)
         this.alert()
      });
-  }
-  
-
+    }
 }

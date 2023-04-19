@@ -17,6 +17,5 @@ export class DomesticComponent {
       console.log(this.Ddata = data)
       
     })
-    
   }
 }

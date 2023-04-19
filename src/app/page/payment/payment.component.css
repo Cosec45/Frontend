@@ -1,0 +1,79 @@
+.container-fluid{
+    color: #000000;
+    position: relative;
+}
+.btn {
+    background-color: #f88020;
+  }
+
+  h1 {
+    color: #000000;
+    text-align: center;
+    font-size: larger;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-family: 'Itim', cursive;
+    font-family: 'Niramit', sans-serif;
+    font-family: 'Noto Serif Thai', serif;
+  }
+  #cvv{
+    margin: 8px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 7px;
+    width: 90%;
+    margin-left: 10px;
+  }
+  
+ #date  {
+    margin: 8px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 7px;
+    width: 500px;
+    margin-left: 10px;
+  }
+  input[type='text']{
+      margin: 8px 0;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      outline: none;
+      border-radius: 7px;
+      width: 98%;
+      margin-left: 10px;
+  }
+  .head:before,
+    .head:after{
+      background-color: rgb(196, 196, 196);
+      content: "";
+      display: inline-block;
+      height: 1.5px;
+      position: relative;
+      vertical-align: middle;
+      width: 20%;
+    }
+  .head{
+      font-weight:100;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size:30px;
+      text-align: center;
+      line-height:50px;
+      padding: 20px;
+      color: rgb(0, 0, 0);
+      padding-bottom: 10px;
+    }
+    .checkbox{
+        margin: 12px 5px;
+        text-align: left;
+        color:rgb(161, 158, 158);
+        
+    }
+    .dd{
+        padding-left: 455px;
+    }
+    
+    

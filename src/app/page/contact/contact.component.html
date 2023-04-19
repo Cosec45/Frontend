@@ -1,51 +1,107 @@
-<div class="background">
+<div class="container-fluid">
+  <div class="background">
     <div class="container">
-        <div class="screen">
-            <div class="screen-header">
-                <div class="screen-header-left">
-                    <div class="screen-header-button close"></div>
-                    <div class="screen-header-button maximize"></div>
-                    <div class="screen-header-button minimize"></div>
-                </div>
-                <div class="screen-header-right">
-                    <div class="screen-header-ellipsis"></div>
-                    <div class="screen-header-ellipsis"></div>
-                    <div class="screen-header-ellipsis"></div>
-                </div>
-            </div>
-            <div class="screen-body">
-                <div class="screen-body-item left">
-                    <div class="app-title">
-                        <span>CONTACT US</span>
-                    </div>
-                    <div>
-                        <span>
-                            <img class="img" src="https://cdn.wallpapersafari.com/27/9/0H9Zlm.jpg" alt="image">
-                        </span>
-                    </div>
-                    <div class="app-contact">CONTACT INFO : +66 62 996 2646 or +66 80 034 9211 </div>
-                </div>
-                <div class="screen-body-item">
-                    <div class="app-form">
-                        <div class="app-form-group">
-                            <input class="app-form-control" placeholder="NAME" value="Kurt Cobain">
-                        </div>
-                        <div class="app-form-group">
-                            <input class="app-form-control" placeholder="EMAIL">
-                        </div>
-                        <div class="app-form-group">
-                            <input class="app-form-control" placeholder="CONTACT NO">
-                        </div>
-                        <div class="app-form-group message">
-                            <textarea class="app-form-control" name="" id="" placeholder="MESSAGE" cols="30" rows="18"></textarea>
-                        </div>
-                        <div class="app-form-group buttons">
-                            <button class="app-form-button">CANCEL</button>
-                            <button class="app-form-button">SEND</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
         </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACT US</span>
+            </div>
+            <div>
+              <span>
+                <img
+                  class="img"
+                  src="https://cdn.wallpapersafari.com/27/9/0H9Zlm.jpg"
+                  alt="image"
+                />
+              </span>
+            </div>
+            <div class="app-contact">
+              CONTACT INFO : +66 62 996 2646 or +66 80 034 9211
+            </div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input
+                  type="text"
+                  class="app-form-control"
+                  placeholder="NAME"
+                  [(ngModel)]="name"
+                />
+                <!-- รับตัวแปร-->
+              </div>
+              <div class="app-form-group">
+                <input
+                  type="email"
+                  class="app-form-control"
+                  placeholder="EMAIL"
+                  [(ngModel)]="email"
+                />
+              </div>
+              <div class="app-form-group">
+                <input
+                  type="tel"
+                  class="app-form-control"
+                  placeholder="PhoneNumber"
+                  [(ngModel)]="phone"
+                />
+              </div>
+              <div class="app-form-group message">
+                <textarea
+                  class="app-form-control"
+                  name=""
+                  id=""
+                  placeholder="MESSAGE"
+                  cols="30"
+                  rows="18"
+                  [(ngModel)]="massage"
+                ></textarea>
+              </div>
+              <div class="app-form-group buttons ms-5 ps-5">
+                <div class="ms-5 ps-5">
+                  <div class="ms-5 ps-5">
+                    <div class="ms-5 ps-5">
+                      <button>
+                        <div class="svg-wrapper-1">
+                          <div class="svg-wrapper">
+                            <svg
+                              height="24"
+                              width="24"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path d="M0 0h24v24H0z" fill="none"></path>
+                              <path
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                fill="currentColor"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <span (click)="send()">Send</span>
+                        <!-- <input type="submit"  class="btn btn-submit"  value=" send"> -->
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>

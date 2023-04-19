@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import {TourFService} from '../../tour-f.service';
 import {TourFStructure } from '../../../assets/data/tourFStructure';
 import { ActivatedRoute,Router } from '@angular/router';
+import{TripdetailService}from '../../tripdetail.service'
+import{tripdetailStructure}from '../../../assets/data/tripdetail'
 
 @Component({
   selector: 'app-foreign-id',
@@ -12,7 +14,8 @@ export class ForeignIDComponent {
   id = '';
   Ddata: TourFStructure = {};
   imgSelect = '';
-  constructor(private datanew: TourFService,private routedata:ActivatedRoute,private route:Router) {}
+  tripdata:tripdetailStructure = {};
+  constructor(private datanew: TourFService,private routedata:ActivatedRoute,private route:Router,private Newtripdata: TripdetailService) {}
 
   ngOnInit(): void {
     this.id  = this.routedata.snapshot.paramMap.get('id')|| '-1'
@@ -22,6 +25,10 @@ export class ForeignIDComponent {
       this.Ddata = data
       console.log(this.Ddata)
       
+    })
+    this.Newtripdata.getTripDetailById(this.id).subscribe((data)=>{
+      this.tripdata = data
+      console.log(this.tripdata)
     })
   }
   getImg(pic:string){
