@@ -14,6 +14,7 @@ import { ForeignComponent } from './tourcard/foreign/foreign.component';
 import { FormsModule } from '@angular/forms';
 import { DomesticIDComponent } from './pagebyID/domestic-id/domestic-id.component';
 import { ForeignIDComponent } from './pagebyID/foreign-id/foreign-id.component';
+import { LoginComponent } from './page/login/login.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ForeignIDComponent } from './pagebyID/foreign-id/foreign-id.component';
     DomesticComponent,
     ForeignComponent,
     DomesticIDComponent,
-    ForeignIDComponent
+    ForeignIDComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
